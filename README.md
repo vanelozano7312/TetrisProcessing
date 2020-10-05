@@ -6,8 +6,13 @@ En este proyecto se realizó un tetris usando programación estructurada mediant
 A la hora de programar una versión de este juego se deben tener en cuenta los siguientes aspectos:
 
 ## Las fichas, sus rotaciones y el tablero:
+<p align="center"><img src="Tetrominos.png" width="50%"></p>
+Ya que cada tetromino es diferente, así como sus colores y sus rotaciones, es importante tenerlos en la memoria de la forma más optimizada posible. En este proyecto se  le asigna un entero a cada rotación del tetromino, este se escoge pasando de la matriz del tetromino a una matriz de 0s y 1s donde 1 representa los cuadrados el tetromino, y así mismo esta mariz para a ser un número binario que nos dará el entero necesario para la representación.
+Por ejemplo el tetromino S en su rotación 1 está dado por la matriz:{{011}, {110}, {000}} y su equivalente en binario es 011110000 es decir 240. De esta manera se almacenaron todas las ichas y sus rotaciones en la memoria.
 
-Ya que cada tetromino es diferente, así como sus colores y sus rotaciones, es importante tenerlos en la memoria de la forma más optimizada posible.
+<p align="center"><img src="Tablero.jpg" width="50%"></p>
+Para el tablero se asignó una matriz de 20x10
+
 ## Caida de las piezas:
 
 ## Colisiones:
